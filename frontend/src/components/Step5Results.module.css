@@ -1,0 +1,262 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Success banner ──────────────────────────────────────────────────────── */
+.successBanner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+  border-radius: 14px;
+  padding: 18px 24px;
+}
+
+.successIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.successTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #15803d;
+  margin: 0;
+}
+
+.successSub {
+  font-size: 0.82rem;
+  color: #16a34a;
+  margin: 3px 0 0;
+}
+
+/* ── Cards grid ──────────────────────────────────────────────────────────── */
+.cardsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Result card ─────────────────────────────────────────────────────────── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0;
+}
+
+/* ── 3-stage strip ───────────────────────────────────────────────────────── */
+.stageStrip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 120px;
+  max-width: 240px;
+}
+
+.stageLabel {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stageImgWrap {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finalImgWrap {
+  border-color: var(--navy);
+  box-shadow: 0 4px 16px rgba(0,51,102,0.15);
+}
+
+.stageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.stageStat {
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 0;
+}
+
+.bgBadge {
+  font-size: 0.7rem;
+  background: #eff6ff;
+  color: #1e40af;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin: 0;
+}
+
+.arrow {
+  font-size: 1.4rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  margin-top: -16px;
+}
+
+/* ── Stats table ─────────────────────────────────────────────────────────── */
+.statsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.statsTable td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.statsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.statLabel {
+  color: var(--muted);
+  font-weight: 500;
+  width: 40%;
+}
+
+.statValue {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.statHighlight .statValue {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.statHighlight {
+  background: #f0f4ff;
+}
+
+/* ── Size badge ──────────────────────────────────────────────────────────── */
+.sizeBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin-left: 4px;
+}
+
+/* ── Download button ─────────────────────────────────────────────────────── */
+.downloadBtn {
+  padding: 11px 24px;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  transition: background 0.18s;
+  box-shadow: 0 4px 12px rgba(0,51,102,0.18);
+}
+
+.downloadBtn:hover { background: #003399; }
+
+/* ── Action bar ──────────────────────────────────────────────────────────── */
+.actionBar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.startOverBtn {
+  padding: 11px 22px;
+  background: transparent;
+  border: 1.5px solid var(--danger);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--danger);
+  transition: background 0.15s;
+}
+
+.startOverBtn:hover { background: #fef2f2; }
+
+.reEditBtn {
+  padding: 11px 22px;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.reEditBtn:hover { border-color: var(--navy); background: #f0f4ff; }
+
+.dlAllBtn {
+  margin-left: auto;
+  padding: 11px 28px;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.18s;
+  box-shadow: 0 4px 12px rgba(22,163,74,0.25);
+}
+
+.dlAllBtn:hover { background: #15803d; }

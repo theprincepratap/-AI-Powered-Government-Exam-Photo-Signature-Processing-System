@@ -1,0 +1,131 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: #fafff8;
+  border: 1.5px solid #bbf7d0;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 0.97rem;
+  color: var(--navy);
+}
+
+/* ── Dropdown ────────────────────────────────────────────────────────────── */
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  appearance: none;
+  padding: 11px 40px 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--text);
+}
+
+.select:focus {
+  border-color: var(--green);
+}
+
+.selectArrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--muted);
+}
+
+/* ── Quick tiles ─────────────────────────────────────────────────────────── */
+.quickGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quickTile {
+  padding: 6px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  background: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.quickTile:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.quickActive {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+/* ── Spec grid ─────────────────────────────────────────────────────────── */
+.specGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 520px) {
+  .specGrid { grid-template-columns: 1fr; }
+}
+
+.specCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.specTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.specRows {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.specRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 4px;
+}
+
+.specRow:last-child { border-bottom: none; padding-bottom: 0; }
+
+.specRow span:first-child { color: var(--muted); }
+.specRow span:last-child  { font-weight: 600; color: var(--text); }
+
+.specNote span:last-child {
+  font-weight: 400;
+  color: var(--muted);
+  font-style: italic;
+  text-align: right;
+  max-width: 60%;
+  word-break: break-word;
+}

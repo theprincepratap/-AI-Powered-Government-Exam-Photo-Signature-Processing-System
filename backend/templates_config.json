@@ -1,0 +1,290 @@
+{
+  "templates": [
+    {
+      "id": "ssc_cgl",
+      "name": "SSC CGL / CHSL / MTS",
+      "group": "Central Government",
+      "description": "Staff Selection Commission – Combined Graduate Level",
+      "photo": {
+        "widthPx": 413,
+        "heightPx": 531,
+        "widthMM": 35,
+        "heightMM": 45,
+        "dpi": 300,
+        "maxSizeKB": 300,
+        "format": "jpg",
+        "notes": "White / light background. Face clearly visible."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Black ink on white paper."
+      }
+    },
+    {
+      "id": "upsc",
+      "name": "UPSC Civil Services",
+      "group": "Central Government",
+      "description": "Union Public Service Commission – IAS / IPS / IFS exams",
+      "photo": {
+        "widthPx": 413,
+        "heightPx": 531,
+        "widthMM": 35,
+        "heightMM": 45,
+        "dpi": 300,
+        "maxSizeKB": 300,
+        "format": "jpg",
+        "notes": "Passport-style photo, white or off-white background."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Sign on white paper with blue / black ink."
+      }
+    },
+    {
+      "id": "ibps_sbi",
+      "name": "IBPS / SBI Bank PO & Clerk",
+      "group": "Banking",
+      "description": "Institute of Banking Personnel Selection & State Bank of India",
+      "photo": {
+        "widthPx": 390,
+        "heightPx": 390,
+        "widthMM": 33,
+        "heightMM": 33,
+        "dpi": 300,
+        "maxSizeKB": 200,
+        "format": "jpg",
+        "notes": "Square photo, plain coloured background."
+      },
+      "signature": {
+        "widthPx": 390,
+        "heightPx": 160,
+        "widthMM": 33,
+        "heightMM": 13,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Signed on white paper."
+      }
+    },
+    {
+      "id": "rrb_railway",
+      "name": "RRB Railway NTPC / Group D",
+      "group": "Railways",
+      "description": "Railway Recruitment Board – Non-Technical Popular Categories",
+      "photo": {
+        "widthPx": 413,
+        "heightPx": 531,
+        "widthMM": 35,
+        "heightMM": 45,
+        "dpi": 300,
+        "maxSizeKB": 300,
+        "format": "jpg",
+        "notes": "Light background, formal attire."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Blue ink on white paper."
+      }
+    },
+    {
+      "id": "bihar_police",
+      "name": "Bihar Police Constable / SI",
+      "group": "State Police",
+      "description": "Bihar Police – Sub-Inspector & Constable Recruitment",
+      "photo": {
+        "widthPx": 472,
+        "heightPx": 590,
+        "widthMM": 40,
+        "heightMM": 50,
+        "dpi": 300,
+        "maxSizeKB": 500,
+        "format": "jpg",
+        "notes": "White background, formal photo."
+      },
+      "signature": {
+        "widthPx": 472,
+        "heightPx": 177,
+        "widthMM": 40,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 200,
+        "format": "jpg",
+        "notes": "Clear signature, no smudges."
+      }
+    },
+    {
+      "id": "up_police",
+      "name": "UP Police Constable / SI",
+      "group": "State Police",
+      "description": "Uttar Pradesh Police Recruitment & Promotion Board",
+      "photo": {
+        "widthPx": 354,
+        "heightPx": 472,
+        "widthMM": 30,
+        "heightMM": 40,
+        "dpi": 300,
+        "maxSizeKB": 200,
+        "format": "jpg",
+        "notes": "White background preferred."
+      },
+      "signature": {
+        "widthPx": 354,
+        "heightPx": 142,
+        "widthMM": 30,
+        "heightMM": 12,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Blue or black ink."
+      }
+    },
+    {
+      "id": "nta_jee_neet",
+      "name": "NTA JEE / NEET",
+      "group": "Education",
+      "description": "National Testing Agency – JEE Mains, NEET UG/PG",
+      "photo": {
+        "widthPx": 354,
+        "heightPx": 472,
+        "widthMM": 30,
+        "heightMM": 40,
+        "dpi": 300,
+        "maxSizeKB": 200,
+        "format": "jpg",
+        "notes": "Passport-style, face must occupy 75% of frame."
+      },
+      "signature": {
+        "widthPx": 354,
+        "heightPx": 142,
+        "widthMM": 30,
+        "heightMM": 12,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Please sign in full."
+      }
+    },
+    {
+      "id": "passport_india",
+      "name": "Indian Passport / Visa",
+      "group": "Government ID",
+      "description": "Ministry of External Affairs – Passport Application",
+      "photo": {
+        "widthPx": 708,
+        "heightPx": 944,
+        "widthMM": 60,
+        "heightMM": 80,
+        "dpi": 300,
+        "maxSizeKB": 500,
+        "format": "jpg",
+        "notes": "White background. Eyes open, looking straight."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Scanned signature on plain white paper."
+      }
+    },
+    {
+      "id": "cat_mba",
+      "name": "CAT / MBA Entrance",
+      "group": "Education",
+      "description": "IIM CAT and other MBA entrance exams",
+      "photo": {
+        "widthPx": 413,
+        "heightPx": 531,
+        "widthMM": 35,
+        "heightMM": 45,
+        "dpi": 300,
+        "maxSizeKB": 300,
+        "format": "jpg",
+        "notes": "Light background, clear face."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Pen signature on white."
+      }
+    },
+    {
+      "id": "mpsc_maha",
+      "name": "MPSC Maharashtra",
+      "group": "State Government",
+      "description": "Maharashtra Public Service Commission",
+      "photo": {
+        "widthPx": 413,
+        "heightPx": 531,
+        "widthMM": 35,
+        "heightMM": 45,
+        "dpi": 300,
+        "maxSizeKB": 300,
+        "format": "jpg",
+        "notes": "Passport-style white background."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Black ink recommended."
+      }
+    },
+    {
+      "id": "custom",
+      "name": "Custom (User Defined)",
+      "group": "Custom",
+      "description": "Manually specify all dimensions",
+      "photo": {
+        "widthPx": 413,
+        "heightPx": 531,
+        "widthMM": 35,
+        "heightMM": 45,
+        "dpi": 300,
+        "maxSizeKB": 300,
+        "format": "jpg",
+        "notes": "Edit all fields manually."
+      },
+      "signature": {
+        "widthPx": 413,
+        "heightPx": 177,
+        "widthMM": 35,
+        "heightMM": 15,
+        "dpi": 300,
+        "maxSizeKB": 100,
+        "format": "jpg",
+        "notes": "Edit all fields manually."
+      }
+    }
+  ]
+}

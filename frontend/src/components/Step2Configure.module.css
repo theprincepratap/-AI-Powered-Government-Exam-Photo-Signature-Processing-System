@@ -1,0 +1,193 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ── Section ──────────────────────────────────────────────────────────── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Upload grid ─────────────────────────────────────────────────────── */
+.uploadGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.uploadGrid[data-cols="2"] {
+  grid-template-columns: 1fr 1fr;
+}
+
+.uploadGrid[data-cols="1"] {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 600px) {
+  .uploadGrid[data-cols="2"] { grid-template-columns: 1fr; }
+}
+
+/* ── Method tabs ─────────────────────────────────────────────────────── */
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .tabs { grid-template-columns: 1fr; }
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 16px 18px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--white);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #93c5fd;
+  background: #f0f9ff;
+}
+
+.tabActive {
+  border-color: var(--navy);
+  background: #eef4ff;
+}
+
+.tabIcon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.tab p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.tab small {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* ── Method panel ─────────────────────────────────────────────────────── */
+.methodPanel {
+  /* Children handle their own card styles */
+}
+
+.manualPanels {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Warn ─────────────────────────────────────────────────────────────── */
+.warn {
+  padding: 10px 16px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: #92400e;
+  font-weight: 600;
+}
+
+/* ── Actions ─────────────────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.backBtn {
+  padding: 11px 24px;
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--border);
+  border-radius: 9px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.backBtn:hover:not(:disabled) {
+  border-color: var(--navy);
+  background: #eef4ff;
+}
+
+.backBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.processBtn {
+  padding: 13px 32px;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s, opacity 0.2s, transform 0.15s;
+}
+
+.processBtn:hover:not(:disabled) {
+  background: #004a99;
+  transform: translateY(-1px);
+}
+
+.processBtn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2.5px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }

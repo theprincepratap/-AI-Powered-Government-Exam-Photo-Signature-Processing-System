@@ -1,0 +1,147 @@
+.panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panelTitle {
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 8px;
+}
+
+/* ── Summary grid ─────────────────────────────────────────────────────────── */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 560px) {
+  .summaryGrid { grid-template-columns: 1fr; }
+}
+
+.summaryCard {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--light);
+}
+
+.summaryCard h4 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: var(--navy);
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.82rem;
+}
+
+.metaRow:last-child { border-bottom: none; }
+
+.metaLabel {
+  color: var(--muted);
+}
+
+.metaValue {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.pending {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── Aggregate button ────────────────────────────────────────────────────── */
+.aggregateBtn {
+  padding: 11px 24px;
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, opacity 0.2s;
+  align-self: flex-start;
+}
+
+.aggregateBtn:hover:not(:disabled) {
+  background: #004080;
+}
+
+.aggregateBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ── Verdict block ────────────────────────────────────────────────────────── */
+.verdict {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.pass {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.fail {
+  background: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.verdictIcon {
+  font-size: 1.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.pass .verdictIcon { color: var(--success); }
+.fail .verdictIcon { color: var(--danger); }
+
+.verdictTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.pass .verdictTitle { color: var(--success); }
+.fail .verdictTitle { color: var(--danger); }
+
+.verdictSub {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.rulesList {
+  font-size: 0.85rem;
+  color: var(--danger);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}

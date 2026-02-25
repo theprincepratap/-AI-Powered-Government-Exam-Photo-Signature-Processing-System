@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.heading h2 {
+  font-size: 1.55rem;
+  margin-bottom: 6px;
+}
+
+.heading p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ── Option cards ─────────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+  position: relative;
+  font-family: inherit;
+}
+
+.card:hover {
+  border-color: #93c5fd;
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.selected {
+  border-color: var(--navy) !important;
+  background: #eef4ff;
+  box-shadow: 0 0 0 3px rgba(0,51,102,0.10), var(--shadow) !important;
+}
+
+.icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cardBody h3 {
+  font-size: 1.02rem;
+  margin-bottom: 5px;
+  color: var(--navy);
+}
+
+.cardBody p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── Check badge ─────────────────────────────────────────────────────────── */
+.check {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.checkVisible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Actions row ─────────────────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.nextBtn {
+  padding: 13px 32px;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: background 0.2s, opacity 0.2s, transform 0.15s;
+}
+
+.nextBtn:hover:not(:disabled) {
+  background: #004a99;
+  transform: translateY(-1px);
+}
+
+.nextBtn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}

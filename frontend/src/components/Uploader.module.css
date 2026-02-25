@@ -1,0 +1,126 @@
+/* ── Shared card & uploader styles ─────────────────────────────────────── */
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cardHeader h3 {
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+
+.iconBox {
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  background: #eef2ff;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.spec {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ── Drop zone ──────────────────────────────────────────────────────────── */
+.dropZone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 24px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+  background: #fafafa;
+}
+
+.signatureDrop {
+  min-height: 90px;
+}
+
+.dropZone:hover,
+.dragging {
+  border-color: var(--navy);
+  background: #eef2ff;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  pointer-events: none;
+  text-align: center;
+}
+
+.uploadIcon {
+  font-size: 2rem;
+  color: var(--navy);
+  opacity: 0.5;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────────────── */
+.secondaryBtn {
+  align-self: flex-start;
+  padding: 6px 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.secondaryBtn:hover {
+  background: var(--light);
+}
+
+/* ── Validation badge ────────────────────────────────────────────────────── */
+.badge {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+}
+
+.valid {
+  background: #f0fdf4;
+  color: var(--success);
+  border: 1px solid #bbf7d0;
+}
+
+.invalid {
+  background: #fef2f2;
+  color: var(--danger);
+  border: 1px solid #fecaca;
+}

@@ -1,0 +1,38 @@
+/* ── Global reset & variables ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #003366;
+  --saffron:#e07b00;
+  --green:  #138808;
+  --white:  #ffffff;
+  --light:  #f4f6f9;
+  --border: #d0d7e0;
+  --text:   #1a1a2e;
+  --muted:  #6b7280;
+  --danger: #dc2626;
+  --success:#16a34a;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.10);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ── Typography helpers ─────────────────────────────────────────────────── */
+h1, h2, h3, h4 { font-weight: 700; color: var(--navy); }
+
+/* ── Button base ─────────────────────────────────────────────────────────── */
+button { cursor: pointer; font-family: inherit; }
+
+/* ── Utility ─────────────────────────────────────────────────────────────── */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+}

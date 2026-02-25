@@ -1,0 +1,134 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: #fafbff;
+  border: 1.5px solid #c7d2fe;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 0.97rem;
+  color: var(--navy);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* ── Field ─────────────────────────────────────────────────────────────── */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.field input[type="number"] {
+  padding: 8px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.field input[type="number"]:focus {
+  border-color: var(--navy);
+}
+
+.field small {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* ── DPI row ────────────────────────────────────────────────────────────── */
+.dpiRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dpiPresets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.pill {
+  padding: 3px 9px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  font-size: 0.73rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pillActive {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+/* ── Format ─────────────────────────────────────────────────────────────── */
+.formatRow {
+  display: flex;
+  gap: 10px;
+}
+
+.fmtBtn {
+  flex: 1;
+  padding: 10px 8px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  transition: all 0.15s;
+}
+
+.fmtBtn small {
+  font-size: 0.68rem;
+  font-weight: 400;
+}
+
+.fmtActive {
+  border-color: var(--navy);
+  background: #eef4ff;
+  color: var(--navy);
+}
+
+/* ── Summary bar ─────────────────────────────────────────────────────────── */
+.summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  background: #e0e7ff;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #3730a3;
+}
