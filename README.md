@@ -12,8 +12,49 @@ Crop · AI background removal · Resize to exact government spec — all in the 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
 [![rembg](https://img.shields.io/badge/AI-rembg%20U2Net-FF6B6B)](https://github.com/danielgatis/rembg)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-28a745)](https://ai-govt-photo-processor.vercel.app)
 
 </div>
+
+---
+
+## 🖼 Screenshots — How It Works
+
+### Step 1 — Choose Mode & Upload
+> Select whether you want to process a Photo, Signature, or Both. Then upload your files.
+
+![Step 1 - Select Mode](docs/screenshots/step1-select-mode.png)
+![Step 1 - Upload Files](docs/screenshots/step1-upload.png)
+
+---
+
+### Step 2 — Crop Your Photo
+> Drag, zoom and rotate to get the perfect passport-style crop. Choose aspect ratio (Passport 7:9, Square, 4:3, or Free).
+
+![Step 2 - Crop](docs/screenshots/step2-crop.png)
+
+---
+
+### Step 3 — AI Background Removal
+> One click removes the background using the U2-Net AI model (via `rembg`). Choose White, Sky Blue, Black, Transparent, or a Custom colour.
+
+![Step 3 - Background Removal](docs/screenshots/step3-background.png)
+
+---
+
+### Step 4 — Resize Configuration
+> Pick an exam template (SSC, UPSC, IBPS, RRB, Bihar Police…) or enter custom dimensions. The app shows exact pixel size, DPI, max file size and format required.
+
+![Step 4 - Exam Template](docs/screenshots/step4-template.png)
+![Step 4 - Manual Resize](docs/screenshots/step4-manual.png)
+
+---
+
+### Step 5 — Download Results
+> See a side-by-side comparison: Original → After BG removal → Final output. File size is reduced by up to 98%. Download photo and signature with one click.
+
+![Step 5 - Final Output Photo](docs/screenshots/step5-result-photo.png)
+![Step 5 - Final Output Signature](docs/screenshots/step5-result-signature.png)
 
 ---
 
