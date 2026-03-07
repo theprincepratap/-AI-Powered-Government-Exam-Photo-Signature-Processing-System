@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🇮🇳 GovPhoto AI Processor
+# GovPhoto AI Resizer with Pre Built Template
 
 **AI-powered government photo & signature processor for Indian competitive exams and government portals.**
 
